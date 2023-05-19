@@ -15,7 +15,6 @@ export class BandaListComponent implements OnInit {
   viejaAño: number=2050;
   tiempo: number = 0;
 
-
   selectedBanda!: BandaDetail;
   selected: Boolean = false;
 

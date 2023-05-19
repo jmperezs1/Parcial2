@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { BandaDetail } from '../bandaDetail';
 
 @Component({
   selector: 'app-banda-detail',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./banda-detail.component.css']
 })
 export class BandaDetailComponent implements OnInit {
+
+  @Input() bandaDetail!: BandaDetail;
 
   constructor() { }
 
