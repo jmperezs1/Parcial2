@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="col-8">
+    <br>
+    <table class="table table-sm">
+      <caption style="color:black">
+        La banda mas antigua es {{viejaName}} y fue fundada hace {{tiempo}} años.
+      </caption>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nombre</th>
+          <th>Pais</th>
+          <th>Genero</th>
+          <th>Fundacion</th>
+        </tr>
+      </thead>
+      <tbody class="bg-light" *ngFor="let banda of bandas">
+        <tr>
+          <td>{{banda.id}}</td>
+          <td style="color:dodgerblue">{{banda.name}}</td>
+          <td>{{banda.country}}</td>
+          <td>{{banda.genre}}</td>
+          <td>{{banda.foundation_year}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
